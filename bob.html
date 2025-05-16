@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gym Management System</title>
+    <link rel="stylesheet" href="dom.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Members Management</h1>
+
+        <form id="memberForm">
+            <h2>Add New Member</h2>
+            <input type="text" id="name" placeholder="Name" required />
+            <input type="number" id="age" placeholder="Age" required />
+            <select id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" id="phone" placeholder="Phone" required />
+            <input type="date" id="joinDate" required />
+            <input type="number" id="trainerId" placeholder="Trainer ID" required />
+            <input type="number" id="planId" placeholder="Workout Plan ID" required />
+            <input type="number" id="subscriptionId" placeholder="Subscription ID" required />
+            <button type="submit">Add Member</button>
+        </form>
+
+        <h2>Members List</h2>
+
+       <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 20px;">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search by Name"
+    style="flex-grow: 1; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"
+  />
+  <button
+    id="deleteAllBtn"
+    style="background-color: #dc3546b0; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;"
+  >
+    Delete All Members
+  </button>
+</div> 
+        <table id="membersTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Phone</th>
+                    <th>Join Date</th>
+                    <th>Trainer</th>
+                    <th>Plan</th>
+                    <th>Subscription</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Members will be loaded here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="mom.js"></script>
+</body>
+</html>

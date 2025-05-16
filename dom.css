@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(3d-gym-equipment_23-2151114217.avif);
+   margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-image: url(pngtree-background-wall-gray-black-bricks-image_2408221.jpg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #c5bbbb;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #5a6d5e;
+    color: white;
+    cursor: pointer;
+    grid-column: span 2;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #656161;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #696c6e;
+    color: white;
+}
+
+table td button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.edit {
+    background-color: #ac8103;
+    color: #000;
+}
+
+button.delete {
+    background-color: #dc3546b0;
+    color: white;
+} 
+table td {
+    color: #ffffff; 
+}
